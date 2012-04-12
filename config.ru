@@ -1,4 +1,5 @@
-# This file is used by Rack-based servers to start the application.
+require 'sinatra'
 
-require ::File.expand_path('../config/environment',  __FILE__)
-run Domains::Application
+get '*' do
+  redirect 'http://robertgaal.com', 301
+end
