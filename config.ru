@@ -1,7 +1,9 @@
 require 'sinatra'
 
+@url = 'http://robertgaal.com'
+
 get '*' do
-  redirect 'http://robertgaal.com', 301
+  redirect @url, 301
 end
 
 run Sinatra::Application
